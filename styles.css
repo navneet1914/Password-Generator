@@ -25,7 +25,7 @@
     --dk-text: hsl(198, 20%, 13%);
 }
 
-body {
+#wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -73,7 +73,7 @@ h1 {
     border:none;
   }
 
-  .display::placeholder {
+.display::placeholder {
     position:absolute;
     top: 50%;
     left: 1.5rem;
@@ -240,7 +240,7 @@ h1 {
 }
 
 
-/* copied wala text accha krne k lie */
+/* copied wala text show krne k lie */
 .tooltip {
     position: absolute;
     background-color: var(--vb-violet2);
@@ -260,4 +260,23 @@ h1 {
     opacity: 1;
     transform: scale(1);
   }
+
+  /*For firefox we use moz-range-thumb */
+/* .slider::-moz-range-thumb {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--vb-yellow);
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.50);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb:hover {
+    outline: 2px solid var(--vb-yellow);
+    background-color: var(--dk-violet);
+    box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
+  } */
 
